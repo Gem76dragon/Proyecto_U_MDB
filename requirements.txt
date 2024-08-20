@@ -146,7 +146,6 @@ sympy==1.13.1
 tenacity==8.5.0
 thinc==8.2.5
 tiktoken==0.7.0
-tokenizers==0.19.1
 toml==0.10.2
 toolz==0.12.1
 tornado==6.4.1
