@@ -1,11 +1,11 @@
 from anthropic import Anthropic, APIError
 from app.ports.claude_port import ClaudePort
 
-# Variable global para la API key
-CLAUDE_API_KEY = None
 
 def set_api_key(api_key):
-    global CLAUDE_API_KEY
+    client = anthropic.Anthropic(
+    api_key=os.environ["ANTHROPIC_API_KEY"],
+)
     CLAUDE_API_KEY = api_key
 
 class ClaudeAdapter(ClaudePort):
