@@ -4,7 +4,7 @@ import streamlit as st
 import yaml
 from app.adapters.streamlit_adapter import StreamlitAdapter
 from app.adapters.file_adapter import FileAdapter
-from app.adapters.claude_adapter import ClaudeAdapter
+from app.adapters.claude_adapter import ClaudeAdapter, set_api_key
 from app.domain.services import ConfigurationService
 
 # Configuración de la página
@@ -34,7 +34,7 @@ def load_config():
 config = load_config()
 
 # Configurar la API key globalmente
-set_api_key(config['CLAUDE_API_KEY'])
+set_api_key(config['claude_api_key'])
 
 # Inicialización de servicios
 file_adapter = FileAdapter()
