@@ -1,0 +1,71 @@
+{
+  "app": "HOST",
+  "path": "miApp/files/",
+  "partition": 30,
+  "size": 1001,
+  "period": "D",
+  "table_name": "customer_cli",
+  "fields": [
+    {
+      "nombre": "customer_id",
+      "tipo": "NUMBER",
+      "longitud": 10,
+      "obligatorio": true,
+	  "llave": true
+    },
+    {
+      "nombre": "first_name",
+      "tipo": "VARCHAR2",
+      "longitud": 50,
+      "obligatorio": true
+    },
+    {
+      "nombre": "last_name",
+      "tipo": "VARCHAR2",
+      "longitud": 50,
+      "obligatorio": true
+    },
+    {
+      "nombre": "birth_date",
+      "tipo": "DATE",
+      "longitud": null,
+      "obligatorio": false
+    },
+    {
+      "nombre": "email",
+      "tipo": "VARCHAR2",
+      "longitud": 100,
+      "obligatorio": false
+    },
+    {
+      "nombre": "credit_limit",
+      "tipo": "NUMBER",
+      "longitud": "10,2",
+      "obligatorio": false
+    },
+    {
+      "nombre": "is_active",
+      "tipo": "CHAR",
+      "longitud": 1,
+      "obligatorio": true
+    },
+    {
+      "nombre": "comments",
+      "tipo": "CLOB",
+      "longitud": null,
+      "obligatorio": false
+    },
+    {
+      "nombre": "profile_photo",
+      "tipo": "BLOB",
+      "longitud": null,
+      "obligatorio": false
+    },
+    {
+      "nombre": "last_update",
+      "tipo": "TIMESTAMP",
+      "longitud": null,
+      "obligatorio": true
+    }
+  ]
+}

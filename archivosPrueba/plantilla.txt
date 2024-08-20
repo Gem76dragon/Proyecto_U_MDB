@@ -1,0 +1,30 @@
+** Este es el archivo de configuración para el sistema creado con fecha {{FECHA_CREACION_ARCHIVO}}. A continuación
+** A partir de los datos de entrada se especificará las rutas de almacenamiento y otras caracteristicas,
+** luego con la descripcion de los campos se generara un codigo para estandarizar los datos al sistema.
+
+Structure {
+app ="{{APP}}",
+path_input="{{PATH_INPUT}}",
+path_output="{{PATH_OUTPUT}}",
+partition="{{PARTITION}}",
+period={{PERIOD}},
+table_name="{{TABLE_NAME}}",
+
+
+
+campos: [
+				{
+					"nombre_campo": "{{NOMBRE_CAMPO}}",
+					"logical_format": "{{LOGICAL_FORMAT}}",
+					"formato_fecha": "{{FORMATO_FECHA}}",
+					"type": "{{TYPE}}",
+					"clave_origen": "{{CLAVE_ORIGEN}}",
+					"observacion": "{{OBSERVACION}}",
+					"obligatorio": "{{OBLIGATORIO}}"
+				},
+
+]
+}
+
+
+

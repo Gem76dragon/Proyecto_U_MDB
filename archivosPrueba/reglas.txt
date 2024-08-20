@@ -1,0 +1,22 @@
+1. todo signo que empieze con los caracteres {{ y termine con los caracteres }} seran considerados variables y deben ser reemplazados con las especificaciones de este archivo.
+2. el signo * de la plantilla significa que es un comentario en el codigo y debe copiarse igual en el nuevo archivo
+3. FECHA_CREACION_ARCHIVO = colocar la fecha actual en formato YYYY-MM-DD.HH.MM.SS
+4. APP = valor de la variable app en el archivo de entrada.txt
+5. PATH_INPUT= concatenar el valor que tiene la variable path_input con el nombre de la app en minuscula y adicionar el nombre de carpeta input al final
+6. PATH_OUTPUT=concatenar el valor que tiene la variable path_input con el nombre de la app en minuscula y adicionar el nombre de carpeta output al final
+7. PARTITION= si el valor es menor a 20 debe llevar la palabra LOW, si está entre 21 y 50 debe llevar la palabra "MEDIUM" de lo contrario "HIGHT"
+8. PERIOD= si el valor es D debe llevar la palabra DAILY, si es M debe se MONTH si es A debe llevar YEAR, si es otro valor debe ir NULL
+9. TABLE_NAME= debe llevar el valor de table_name del archivo entrada.txt
+10. si el size del archivo entrada.txt es mayor a 1000 se debe insertar una linea antes de fields que diga status = "WARNING" y una coma
+
+11. NOMBRE_CAMPO= nombre del campo de acuerdo al archivo entrada.txt
+12. LOGICAL_FORMAT= debe llevara siempre la palabra ALFANUMERICO y entre parentesis la longitud del campo del archivo entrada.txt en caso de llevar decimal la longitud debe ser el valor mas la cantidad de decimales + el caracter separador decimal
+13. FORMATO_FECHA= si el campo es de tipo DATE el formato debe llevar YYYY:MM:DD si no es DATE se debe eliminar ese parametro
+14. TYPE= tipo de campo de acuerdo al archivo entrada.txt
+15. CLAVE_ORIGEN= si el campo es llave deber ir la palabra SI de lo contrario eliminar la etiqueta.
+16. OBSERVACION= de acuerdo al nombre del campo describir el campo en un maximo de 100 caracteres
+17. OBLIGATORIO= si el campo es obligatorio debe llevar SI de lo contrario NO
+
+18. el ultimo bloque de los campos no debe llevar ,
+19. el nombre del archivo a descargar debe llamarse como el valor del campo TABLE_NAME y con extension .conf
+20. no incluir en el archivo la respuesta encabezo y pie de pagina del chatbot
