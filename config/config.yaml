@@ -1,0 +1,17 @@
+# Configuración de la aplicación
+app_name: "Generador de Configuración para Plataforma A"
+version: "1.0.0"
+
+# Configuración de Claude 3
+claude_api_key: "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"
+
+
+# Configuración de la interfaz de usuario
+ui:
+  theme: "light"
+  sidebar_width: 300
+
+# Configuración de logging
+logging:
+  level: "INFO"
+  file: "app.log"
