@@ -8,25 +8,45 @@ El sistema utiliza una arquitectura hexagonal (puertos y adaptadores) para logra
 proyecto/
 
 ├── app/
+
 │   ├── adapters/
+
 │   │   ├── __init__.py
+
 │   │   ├── file_adapter.py
+
 │   │   ├── claude_adapter.py
+
 │   │   └── streamlit_adapter.py
+
 │   ├── domain/
+
 │   │   ├── __init__.py
+
 │   │   ├── entities.py
+
 │   │   └── services.py
+
 │   ├── ports/
+
 │   │   ├── __init__.py
+
 │   │   ├── file_port.py
+
 │   │   ├── claude_port.py
+
 │   │   └── ui_port.py
+
 │   └── __init__.py
+
 ├── config/
+
 │   └── config.yaml
+
 ├── main.py
+
 └── requirements.txt
+
 
 ```
                  +-------------------+
