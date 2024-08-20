@@ -30,7 +30,6 @@ docx==0.2.4
 docx2txt==0.8
 duckduckgo_search==6.2.1
 entrypoints==0.4
-es-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.7.0/es_core_news_sm-3.7.0-py3-none-any.whl#sha256=61e6e5530941f5880166855f09f60d7e6ba79ec1e8e45f96244bdb1eb169eb1d
 et-xmlfile==1.1.0
 Faker==26.2.0
 fastembed==0.1.3
