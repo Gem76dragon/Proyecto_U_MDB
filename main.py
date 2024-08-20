@@ -34,7 +34,7 @@ def load_config():
 config = load_config()
 
 # Configurar la API key globalmente
-set_api_key(config['claude_api_key'])
+set_api_key(config['CLAUDE_API_KEY'])
 
 # Inicialización de servicios
 file_adapter = FileAdapter()
