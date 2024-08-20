@@ -1,5 +1,7 @@
 from anthropic import Anthropic, APIError
 from app.ports.claude_port import ClaudePort
+import os
+import sys
 
 # Variable global para la API key
 CLAUDE_API_KEY = None
