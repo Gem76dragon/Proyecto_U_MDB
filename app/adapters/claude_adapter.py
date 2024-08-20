@@ -28,7 +28,7 @@ class ClaudeAdapter(ClaudePort):
             return message.content[0].text
         except APIError as e:
             if e.status_code == 401:
-                raise Exception(f"Error de autenticación: Clave API inválida. Por favor, verifica tu clave API.{str(e)},{api_key}")
+                raise Exception(f"Error de autenticación: Clave API inválida. Por favor, verifica tu clave API.{str(e)},{str(api_key)}")
             else:
                 raise Exception(f"Error en la llamada a la API de Claude: {str(e)}")
         except Exception as e:
