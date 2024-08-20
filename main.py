@@ -33,9 +33,12 @@ def load_config():
 
 config = load_config()
 
+# Configurar la API key globalmente
+set_api_key(config['claude_api_key'])
+
 # Inicialización de servicios
 file_adapter = FileAdapter()
-claude_adapter = ClaudeAdapter(config['claude_api_key'])
+claude_adapter = ClaudeAdapter()  # Ya no necesitas pasar la API key aquí
 ui_adapter = StreamlitAdapter()
 config_service = ConfigurationService(file_adapter, claude_adapter)
 
