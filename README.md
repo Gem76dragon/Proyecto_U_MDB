@@ -6,6 +6,7 @@
 El sistema utiliza una arquitectura hexagonal (puertos y adaptadores) para lograr una separación clara de responsabilidades y facilitar la extensibilidad y mantenibilidad del código.
 
 proyecto/
+
 ├── app/
 │   ├── adapters/
 │   │   ├── __init__.py
