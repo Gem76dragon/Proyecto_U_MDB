@@ -8,6 +8,7 @@ def set_api_key(api_key):
     global CLAUDE_API_KEY
     CLAUDE_API_KEY = api_key
 
+
 class ClaudeAdapter(ClaudePort):
     def __init__(self):
         if CLAUDE_API_KEY is None:
@@ -31,3 +32,6 @@ class ClaudeAdapter(ClaudePort):
                 raise Exception(f"Error en la llamada a la API de Claude: {str(e)}")
         except Exception as e:
             raise Exception(f"Error inesperado en la llamada a la API de Claude: {str(e)}")
+            
+# Asegúrate de que set_api_key esté disponible para importar
+__all__ = ['ClaudeAdapter', 'set_api_key']
